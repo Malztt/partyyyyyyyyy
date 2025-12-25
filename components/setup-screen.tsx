@@ -22,7 +22,7 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
     <div className="relative z-10 flex min-h-screen items-center justify-center px-4">
       <div className="w-full max-w-7xl space-y-12 text-center">
         {/* Santa Hat Icon */}
-        <div className="mb-8 flex justify-center">
+        <div className="flex justify-center">
           <div className="relative flex flex-wrap justify-center gap-8">
             <img
               src="/santa-custom.png"
@@ -42,7 +42,7 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
           </div>
         </div>
 
-        <div className="mx-auto max-w-2xl">
+        <div className="mx-auto max-w-2xl -mt-8">
           {/* Title */}
           <h1 className="font-sans text-7xl font-bold text-christmas-gold animate-pulse-glow md:text-8xl lg:text-9xl">
             เกมวัดดวง
