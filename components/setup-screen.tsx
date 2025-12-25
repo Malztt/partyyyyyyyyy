@@ -20,24 +20,24 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
 
   return (
     <div className="relative z-10 flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-2xl space-y-12 text-center">
+      <div className="w-full max-w-7xl space-y-12 text-center">
         {/* Santa Hat Icon */}
         <div className="mb-8 flex justify-center">
-          <div className="relative flex justify-center gap-4">
+          <div className="relative flex flex-wrap justify-center gap-8">
             <img
               src="/santa-custom.png"
               alt="Santa"
-              className="h-64 w-64 object-contain animate-bounce-slow"
+              className="h-80 w-80 object-contain animate-bounce-slow md:h-96 md:w-96"
             />
             <img
               src="/santa-custom.png"
               alt="Santa"
-              className="h-64 w-64 object-contain animate-bounce-slow delay-100"
+              className="h-80 w-80 object-contain animate-bounce-slow delay-100 md:h-96 md:w-96"
             />
             <img
               src="/santa-custom.png"
               alt="Santa"
-              className="h-64 w-64 object-contain animate-bounce-slow delay-200"
+              className="h-80 w-80 object-contain animate-bounce-slow delay-200 md:h-96 md:w-96"
             />
           </div>
         </div>
