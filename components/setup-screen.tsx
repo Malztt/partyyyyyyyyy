@@ -24,7 +24,11 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
         {/* Santa Hat Icon */}
         <div className="mb-8 flex justify-center">
           <div className="relative">
-            <div className="text-8xl animate-bounce-slow">🎅</div>
+            <img
+              src="/santa-custom.png"
+              alt="Santa"
+              className="h-48 w-48 object-contain animate-bounce-slow"
+            />
           </div>
         </div>
 
