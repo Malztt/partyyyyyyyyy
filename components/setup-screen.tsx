@@ -42,32 +42,36 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
           </div>
         </div>
 
-        {/* Title */}
-        <h1 className="font-sans text-7xl font-bold text-christmas-gold animate-pulse-glow md:text-8xl lg:text-9xl">
-          เกมวัดดวง
-        </h1>
+        <div className="mx-auto max-w-2xl">
+          {/* Title */}
+          <h1 className="font-sans text-7xl font-bold text-christmas-gold animate-pulse-glow md:text-8xl lg:text-9xl">
+            เกมวัดดวง
+          </h1>
+        </div>
 
         {/* Input Section */}
-        <div className="space-y-8">
-          <label className="block font-sans text-2xl font-medium text-christmas-white">จำนวนผู้ร่วมสนุก (คน)</label>
-          <Input
-            type="number"
-            min="2"
-            max="100"
-            value={playerCount}
-            onChange={(e) => setPlayerCount(e.target.value)}
-            className="h-20 border-0 bg-white font-sans text-3xl text-black placeholder:text-black/50 md:h-24 md:text-4xl"
-            placeholder="ใส่จำนวนคน"
-          />
+        <div className="mx-auto max-w-2xl space-y-8">
+          <div className="space-y-8">
+            <label className="block font-sans text-2xl font-medium text-christmas-white">จำนวนผู้ร่วมสนุก (คน)</label>
+            <Input
+              type="number"
+              min="2"
+              max="100"
+              value={playerCount}
+              onChange={(e) => setPlayerCount(e.target.value)}
+              className="h-20 border-0 bg-white font-sans text-3xl text-black placeholder:text-black/50 md:h-24 md:text-4xl"
+              placeholder="ใส่จำนวนคน"
+            />
 
-          {/* Start Button */}
-          <Button
-            onClick={handleStart}
-            disabled={!playerCount || Number.parseInt(playerCount) < 2}
-            className="h-20 w-full rounded-3xl bg-[#00ff00] font-sans text-3xl font-bold text-black shadow-2xl transition-transform hover:scale-105 hover:bg-[#00ff00]/90 disabled:opacity-50 md:h-24 md:text-4xl"
-          >
-            เริ่มปาร์ตี้!
-          </Button>
+            {/* Start Button */}
+            <Button
+              onClick={handleStart}
+              disabled={!playerCount || Number.parseInt(playerCount) < 2}
+              className="h-20 w-full rounded-3xl bg-[#00ff00] font-sans text-3xl font-bold text-black shadow-2xl transition-transform hover:scale-105 hover:bg-[#00ff00]/90 disabled:opacity-50 md:h-24 md:text-4xl"
+            >
+              เริ่มปาร์ตี้!
+            </Button>
+          </div>
         </div>
 
         {/* Decorative Elements */}
