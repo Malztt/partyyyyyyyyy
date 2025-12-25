@@ -20,33 +20,35 @@ export function SetupScreen({ onStart }: SetupScreenProps) {
 
   return (
     <div className="relative z-10 flex min-h-screen items-center justify-center px-4">
-      <div className="w-full max-w-7xl space-y-12 text-center">
-        {/* Santa Hat Icon */}
-        <div className="flex justify-center">
-          <div className="relative flex flex-wrap justify-center gap-8">
-            <img
-              src="/santa-custom.png"
-              alt="Santa"
-              className="h-80 w-80 object-contain animate-bounce-slow md:h-96 md:w-96"
-            />
-            <img
-              src="/santa-custom.png"
-              alt="Santa"
-              className="h-80 w-80 object-contain animate-bounce-slow delay-100 md:h-96 md:w-96"
-            />
-            <img
-              src="/santa-custom.png"
-              alt="Santa"
-              className="h-80 w-80 object-contain animate-bounce-slow delay-200 md:h-96 md:w-96"
-            />
+      <div className="w-full max-w-7xl space-y-8 text-center">
+        <div className="space-y-0">
+          {/* Santa Hat Icon */}
+          <div className="flex justify-center">
+            <div className="relative flex flex-wrap justify-center gap-4 md:gap-8">
+              <img
+                src="/santa-custom.png"
+                alt="Santa"
+                className="h-32 w-32 object-contain animate-bounce-slow md:h-96 md:w-96"
+              />
+              <img
+                src="/santa-custom.png"
+                alt="Santa"
+                className="h-32 w-32 object-contain animate-bounce-slow delay-100 md:h-96 md:w-96"
+              />
+              <img
+                src="/santa-custom.png"
+                alt="Santa"
+                className="h-32 w-32 object-contain animate-bounce-slow delay-200 md:h-96 md:w-96"
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="mx-auto max-w-2xl -mt-8">
-          {/* Title */}
-          <h1 className="font-sans text-7xl font-bold text-christmas-gold animate-pulse-glow md:text-8xl lg:text-9xl">
-            เกมวัดดวง
-          </h1>
+          <div className="mx-auto max-w-2xl -mt-4 md:-mt-32">
+            {/* Title */}
+            <h1 className="font-sans text-5xl font-bold text-christmas-gold animate-pulse-glow md:text-8xl lg:text-9xl">
+              เกมวัดดวง
+            </h1>
+          </div>
         </div>
 
         {/* Input Section */}

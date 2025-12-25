@@ -15,7 +15,7 @@ export function WinnerScreen({ winner, onReset }: WinnerScreenProps) {
 
       <div className="w-full max-w-2xl text-center">
         {/* Trophy */}
-        <div className="mb-8 animate-bounce-slow text-9xl">🏆</div>
+        <div className="mb-8 animate-bounce-slow text-7xl md:text-9xl">🏆</div>
 
         {/* Winner Title */}
         <h1 className="mb-4 font-sans text-5xl font-bold text-christmas-gold animate-pulse-glow md:text-6xl lg:text-7xl">
@@ -24,14 +24,14 @@ export function WinnerScreen({ winner, onReset }: WinnerScreenProps) {
 
         {/* Winner Number */}
         <div className="mb-8 inline-block rounded-3xl bg-christmas-gold px-12 py-6 shadow-2xl">
-          <span className="font-sans text-8xl font-bold text-white">#{winner.number}</span>
+          <span className="font-sans text-6xl font-bold text-white md:text-8xl">#{winner.number}</span>
         </div>
 
         {/* Congratulations Message */}
-        <p className="mb-12 font-sans text-3xl font-semibold text-white md:text-4xl">ผู้ชนะรับรางวัลใหญ่จากซานต้า!</p>
+        <p className="mb-12 font-sans text-xl font-semibold text-white md:text-4xl">ผู้ชนะรับรางวัลใหญ่จากซานต้า!</p>
 
         {/* Celebration Icons */}
-        <div className="mb-8 flex justify-center gap-6 text-6xl">
+        <div className="mb-8 flex justify-center gap-6 text-4xl md:text-6xl">
           <span className="animate-bounce">🎁</span>
           <span className="animate-bounce delay-100">🎄</span>
           <span className="animate-bounce delay-200">⭐</span>
