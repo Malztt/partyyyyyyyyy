@@ -16,9 +16,13 @@ export function GiftBox({ number, isActive, isHighlighted }: GiftBoxProps) {
         !isActive && "bg-gray-700 opacity-50",
       )}
     >
-      {/* Gift Bow */}
+      {/* Gift Bow (Corner) */}
       {isActive && (
-        <div className="absolute left-1/2 top-0 h-3 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-600" />
+        <div className="absolute -right-2 -top-2 z-10 flex h-10 w-10 items-center justify-center">
+          <div className="absolute h-3 w-10 rotate-45 rounded-full bg-red-600 shadow-md" />
+          <div className="absolute h-3 w-10 -rotate-45 rounded-full bg-red-600 shadow-md" />
+          <div className="absolute z-10 h-4 w-4 rounded-full bg-red-700 shadow-inner" />
+        </div>
       )}
 
       {/* Number */}
@@ -40,8 +44,7 @@ export function GiftBox({ number, isActive, isHighlighted }: GiftBoxProps) {
         </div>
       )}
 
-      {/* Ribbon (vertical) */}
-      {isActive && <div className="absolute left-1/2 top-0 h-full w-2 -translate-x-1/2 bg-red-600/60" />}
+
     </div>
   )
 }
