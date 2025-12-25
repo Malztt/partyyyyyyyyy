@@ -24,7 +24,7 @@ export function WinnerScreen({ winner, onReset }: WinnerScreenProps) {
 
         {/* Winner Number */}
         <div className="mb-8 inline-block rounded-3xl bg-christmas-gold px-12 py-6 shadow-2xl">
-          <span className="font-sans text-8xl font-bold text-black">#{winner.number}</span>
+          <span className="font-sans text-8xl font-bold text-white">#{winner.number}</span>
         </div>
 
         {/* Congratulations Message */}
